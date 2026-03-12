@@ -1,0 +1,1795 @@
+<!doctype html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+      Neha Suddha Shakahari Chaat &amp; Sweet House | Authentic Vegetarian
+      Delights
+    </title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#8B0000", // Deep Red
+              saffron: "#FF9933",
+              cream: "#FFFDD0",
+              "background-light": "#FFFBFA",
+              "background-dark": "#121212",
+            },
+            fontFamily: {
+              display: ["Playfair Display", "serif"],
+              body: ["Plus Jakarta Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .food-pattern {
+        background-color: transparent;
+        background-image:
+          radial-gradient(#8b0000 0.5px, transparent 0.5px),
+          radial-gradient(#8b0000 0.5px, #fffbfa 0.5px);
+        background-size: 20px 20px;
+        background-position:
+          0 0,
+          10px 10px;
+        opacity: 0.05;
+      }
+      .dark .food-pattern {
+        background-image:
+          radial-gradient(#ff9933 0.5px, transparent 0.5px),
+          radial-gradient(#ff9933 0.5px, #121212 0.5px);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 font-body transition-colors duration-300"
+  >
+    <header
+      class="sticky top-0 z-50 bg-white/90 dark:bg-black/90 backdrop-blur-md border-b border-saffron/20"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex items-center gap-3">
+            <button
+              id="mobile-menu-btn"
+              class="md:hidden p-2 -ml-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+            >
+              <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+            <div
+              class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-display text-2xl font-bold border-2 border-saffron"
+            >
+              N
+            </div>
+            <div class="hidden md:block">
+              <h1
+                class="text-xl font-display font-bold text-primary dark:text-saffron leading-none"
+              >
+                Neha Suddha Shakahari
+              </h1>
+              <p
+                class="text-[10px] uppercase tracking-widest text-slate-500 dark:text-slate-400 mt-1"
+              >
+                Chaat &amp; Sweet House
+              </p>
+            </div>
+          </div>
+          <nav class="hidden md:flex items-center space-x-8">
+            <a
+              class="text-sm font-semibold hover:text-primary dark:hover:text-saffron transition-colors"
+              href="#home"
+              >Home</a
+            >
+            <a
+              class="text-sm font-semibold hover:text-primary dark:hover:text-saffron transition-colors"
+              href="#categories"
+              >Menu</a
+            >
+            <a
+              class="text-sm font-semibold hover:text-primary dark:hover:text-saffron transition-colors"
+              href="#featured"
+              >Specials</a
+            >
+            <a
+              class="text-sm font-semibold hover:text-primary dark:hover:text-saffron transition-colors"
+              href="#contact"
+              >Find Us</a
+            >
+          </nav>
+          <div class="flex items-center gap-4">
+            <a
+              href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20place%20an%20order."
+              target="_blank"
+              class="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm font-bold transition-all transform hover:scale-105 shadow-lg animate-bounce"
+            >
+              <span class="material-symbols-outlined text-lg">chat</span>
+              WhatsApp Order
+            </a>
+            <button
+              class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              id="theme-toggle"
+            >
+              <span class="material-symbols-outlined dark:hidden"
+                >dark_mode</span
+              >
+              <span class="material-symbols-outlined hidden dark:block"
+                >light_mode</span
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Sidebar Menu -->
+    <div
+      id="mobile-sidebar-overlay"
+      class="fixed inset-0 bg-black/50 z-[90] opacity-0 pointer-events-none transition-opacity duration-300"
+    ></div>
+    <div
+      id="mobile-sidebar"
+      class="fixed inset-y-0 left-0 w-64 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 shadow-2xl z-[100] transform -translate-x-full transition-transform duration-300 ease-in-out"
+    >
+      <div class="p-6 h-full flex flex-col">
+        <div class="flex justify-between items-center mb-8">
+          <div
+            class="font-display font-bold text-xl text-primary dark:text-saffron"
+          >
+            Menu
+          </div>
+          <button
+            id="close-sidebar-btn"
+            class="p-2 -mr-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+          >
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+        <nav class="flex flex-col space-y-6 flex-grow">
+          <a
+            class="font-semibold text-lg hover:text-primary dark:hover:text-saffron transition-colors mobile-nav-link"
+            href="#home"
+            >Home</a
+          >
+          <a
+            class="font-semibold text-lg hover:text-primary dark:hover:text-saffron transition-colors mobile-nav-link"
+            href="#categories"
+            >Menu</a
+          >
+          <a
+            class="font-semibold text-lg hover:text-primary dark:hover:text-saffron transition-colors mobile-nav-link"
+            href="#featured"
+            >Specials</a
+          >
+          <a
+            class="font-semibold text-lg hover:text-primary dark:hover:text-saffron transition-colors mobile-nav-link"
+            href="#contact"
+            >Find Us</a
+          >
+        </nav>
+        <div
+          class="mt-auto pt-6 border-t border-slate-200 dark:border-slate-800"
+        >
+          <a
+            href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20place%20an%20order."
+            target="_blank"
+            class="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white w-full py-3 rounded-xl font-bold transition-colors shadow-lg"
+          >
+            <span class="material-symbols-outlined">chat</span>
+            WhatsApp Order
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section
+      class="relative min-h-[85vh] flex items-center overflow-hidden"
+      id="home"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/10 z-10"
+      ></div>
+      <div class="absolute inset-0 z-0">
+        <img
+          alt="Delicious Indian Food"
+          class="hero-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-1000"
+          src="./Images/Background Image/BackgroundImage2.jpg"
+        />
+        <img
+          alt="Traditional Sweets"
+          class="hero-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-1000"
+          src="./Images/Background Image/BackgroundImage3.jpg"
+        />
+        <img
+          alt="Authentic Chaat"
+          class="hero-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-1000"
+          src="./Images/Background Image/BackgroundImage4.jpg"
+        />
+      </div>
+      <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="max-w-2xl">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-saffron/10 border border-saffron/20 text-saffron font-semibold text-xs uppercase tracking-wider mb-6"
+          >
+            <span class="material-symbols-outlined text-sm">verified</span>
+            100% Pure Vegetarian
+          </div>
+          <h2
+            class="text-5xl lg:text-7xl font-display font-bold text-white leading-tight mb-6"
+          >
+            Authentic <span class="text-primary italic">Vegetarian</span> <br />
+            <span class="text-saffron">Delights</span> in Gatthaghar
+          </h2>
+          <p
+            class="text-lg text-slate-200 mb-8 max-w-lg leading-relaxed"
+          >
+            Every bite tells a story. Handcrafted sweets and bold street
+            flavors, made fresh daily with recipes passed down through
+            generations.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              class="px-8 py-4 bg-primary text-white font-bold rounded-full shadow-xl hover:bg-red-900 transition-all transform hover:-translate-y-1"
+              href="#categories"
+            >
+              View Full Menu
+            </a>
+            <a
+              class="px-8 py-4 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 font-bold rounded-full shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
+              href="tel:+9779813885373"
+            >
+              <span class="material-symbols-outlined">call</span>
+              Order Now: 9823782211
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="py-12 bg-white dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div class="flex flex-col items-center">
+            <span class="material-symbols-outlined text-4xl text-saffron mb-3"
+              >restaurant</span
+            >
+            <h3 class="font-bold">Freshly Prepared</h3>
+            <p class="text-sm text-slate-500">Made every morning</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="material-symbols-outlined text-4xl text-saffron mb-3"
+              >eco</span
+            >
+            <h3 class="font-bold">Pure Veg</h3>
+            <p class="text-sm text-slate-500">No egg, no meat</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="material-symbols-outlined text-4xl text-saffron mb-3"
+              >history_edu</span
+            >
+            <h3 class="font-bold">Traditional</h3>
+            <p class="text-sm text-slate-500">Authentic recipes</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="material-symbols-outlined text-4xl text-saffron mb-3"
+              >celebration</span
+            >
+            <h3 class="font-bold">Events</h3>
+            <p class="text-sm text-slate-500">Party orders welcome</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 relative overflow-hidden" id="categories">
+      <div class="absolute inset-0 food-pattern -z-10"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-display font-bold mb-4">Explore Our Menu</h2>
+          <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+          <p class="text-slate-600 dark:text-slate-400">
+            From crispy, tangy chaats to melt-in-your-mouth sweets — there's
+            something for every craving.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          <a href="#sweets-section" class="group cursor-pointer block">
+            <div
+              class="aspect-square rounded-2xl overflow-hidden mb-4 border-4 border-white dark:border-slate-800 shadow-md group-hover:shadow-xl transition-all"
+            >
+              <img
+                alt="Indian Sweets"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                src="Images/Sweets/sweets.jpg"
+              />
+            </div>
+            <h4
+              class="text-center font-bold text-lg group-hover:text-primary dark:group-hover:text-saffron transition-colors"
+            >
+              Sweets
+            </h4>
+          </a>
+          <a href="#chaat-section" class="group cursor-pointer block">
+            <div
+              class="aspect-square rounded-2xl overflow-hidden mb-4 border-4 border-white dark:border-slate-800 shadow-md group-hover:shadow-xl transition-all"
+            >
+              <img
+                alt="Chaat items"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                src="Images/Chat/papdiChat.jpg"
+              />
+            </div>
+            <h4
+              class="text-center font-bold text-lg group-hover:text-primary dark:group-hover:text-saffron transition-colors"
+            >
+              Chaat
+            </h4>
+          </a>
+          <a href="#snacks-section" class="group cursor-pointer block">
+            <div
+              class="aspect-square rounded-2xl overflow-hidden mb-4 border-4 border-white dark:border-slate-800 shadow-md group-hover:shadow-xl transition-all"
+            >
+              <img
+                alt="Snacks"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                src="Images/Snacks/Samosa.jpg"
+              />
+            </div>
+            <h4
+              class="text-center font-bold text-lg group-hover:text-primary dark:group-hover:text-saffron transition-colors"
+            >
+              Snacks
+            </h4>
+          </a>
+          <a href="#lassi-section" class="group cursor-pointer block">
+            <div
+              class="aspect-square rounded-2xl overflow-hidden mb-4 border-4 border-white dark:border-slate-800 shadow-md group-hover:shadow-xl transition-all"
+            >
+              <img
+                alt="Lassi"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                src="Images/Lassi/Plain Lassi.jpg"
+              />
+            </div>
+            <h4
+              class="text-center font-bold text-lg group-hover:text-primary dark:group-hover:text-saffron transition-colors"
+            >
+              Lassi
+            </h4>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 bg-white dark:bg-slate-900" id="featured">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-end mb-12">
+          <div>
+            <h2 class="text-4xl font-display font-bold mb-2">
+              Popular Right Now
+            </h2>
+            <p class="text-slate-500">
+              Our customers' most-loved choices today.
+            </p>
+          </div>
+          <button
+            class="text-primary dark:text-saffron font-bold flex items-center gap-1 group"
+          >
+            View Full Menu
+            <span
+              class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+              >arrow_right_alt</span
+            >
+          </button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="group bg-background-light dark:bg-background-dark rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-2xl transition-all duration-300"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <img
+                alt="Paneer Roll"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_ntvryyr0ErG_NRYhKMVElCf7A02QdW0mSZoPxCTv8iTgAZCokC11d08jkQI4PhgMMp9iv38Un9PX4nzZkx60M_9Es_p6FhudUfJ5XSLrvJk51la94SFs5WZuKv9zncb7lCWjYyjhL8x_q_5k8Z8K4CpKGtMhn6W-azRp7K8BOyfQy0DPDukSXC1rPPTinXwPBeqNSeRUqiY9-Qj8Y4hLo-x_SrudwuoyBQA6nDm3PQwHjxba7DUX9k9ijK9SchhuLm3DlKB4WQE"
+              />
+              <div
+                class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter"
+              >
+                Bestseller
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold">Special Paneer Roll</h3>
+                <span class="text-primary font-bold">NPR 180</span>
+              </div>
+              <p class="text-sm text-slate-500 mb-6">
+                Chunks of cottage cheese marinated in secret spices, grilled and
+                wrapped in a soft paratha.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=I'd%20like%20to%20order%20the%20Special%20Paneer%20Roll."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+          <div
+            class="group bg-background-light dark:bg-background-dark rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-2xl transition-all duration-300"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <img
+                alt="Dahi Puri"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="Images/Snacks/DahiPuri.jpg"
+              />
+              <div
+                class="absolute top-4 left-4 bg-saffron text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter"
+              >
+                Chef's Choice
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold">Dahi Puri</h3>
+                <span class="text-primary font-bold">NPR 120</span>
+              </div>
+              <p class="text-sm text-slate-500 mb-6">
+                Crispy puris filled with potatoes, sprouts, and sweet yogurt,
+                topped with tangy chutneys and pomegranate.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=I'd%20like%20to%20order%20Dahi%20Puri."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+          <div
+            class="group bg-background-light dark:bg-background-dark rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-2xl transition-all duration-300"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <img
+                alt="Kaju Katli"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="Images/Sweets/Kaju kalti.jpg"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold">Kaju Katli</h3>
+                <span class="text-primary font-bold">NPR 1,200/kg</span>
+              </div>
+              <p class="text-sm text-slate-500 mb-6">
+                The classic Indian cashew fudge. Pure, rich, and melts in your
+                mouth with every bite.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=I'm%20interested%20in%20ordering%20Premium%20Kaju%20Katli."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 bg-slate-50 dark:bg-black/20" id="sweets-section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center mb-12 text-center">
+          <h2 class="text-4xl font-display font-bold mb-4">
+            Our Signature Sweets
+          </h2>
+          <div class="w-24 h-1 bg-primary mb-6"></div>
+          <p class="text-slate-500 max-w-2xl">
+            Made fresh daily using traditional recipes, pure ghee, and the
+            finest ingredients to bring you the authentic taste of tradition.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- Sweet 1: Kaju Katli -->
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Kaju Katli"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Sweets/Kaju kalti.jpg"
+              />
+              <div
+                class="absolute top-4 left-4 bg-saffron text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter shadow-md"
+              >
+                Premium Choice
+              </div>
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Kaju Katli
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 1,200/kg</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                The classic Indian cashew fudge. Pure, rich, and melts in your
+                mouth with every bite. The perfect gift for all occasions.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20some%20Kaju%20Katli."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Sweet 2: Rasmalai -->
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Rasmalai"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Sweets/Rasmalai.jpg"
+              />
+              <div
+                class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter shadow-md"
+              >
+                Customer Favorite
+              </div>
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Rasmalai
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 150/plate</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Soft, spongy paneer discs soaked in rich, saffron-infused creamy
+                milk, garnished with pistachios and almonds.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20Rasmalai."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Sweet 3: Gulab Jamun -->
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Gulab Jamun"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Sweets/Gulab Jamun.jpg"
+              />
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Hot Gulab Jamun
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 60/pc</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Deep-fried milk solids soaked in a warm, fragrant rose and
+                cardamom sugar syrup. Best enjoyed piping hot!
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20Hot%20Gulab%20Jamun."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Barfi"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Sweets/Barfi.jpg"
+              />
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Barfi
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 1100/kg</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Crafted from slow-cooked milk solids and fragrant cardamom, our
+                Barfi is rich, smooth, and perfectly sweet — a true celebration
+                in every bite. .
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20some%20Barfi."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Jerry"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Sweets/jalebi.jpg"
+              />
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Jerry
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 500/kg</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Crispy on the outside, syrupy sweet on the inside. Our Jalebi is
+                fried fresh and soaked in warm sugar syrup until every spiral is
+                dripping with flavor.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20some%20Jerry."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Cham Cham"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Sweets/Cham Cham.jpg"
+              />
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Cham Cham
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 1000/kg</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Soft, spongy and soaked in sweetness. Our Cham Cham is made from
+                fresh chenna, rolled in coconut flakes and filled with a creamy
+                mawa center that melts with every bite.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20some%20Cham%20Cham."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Kalakand"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Sweets/Kalakand.jpg"
+              />
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Kalakand
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 900/kg</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Grainy, moist and generously sweet. Our Kalakand is slow-cooked
+                from fresh milk until it sets into thick, fudgy squares that
+                crumble perfectly with every bite.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20some%20Kalakand."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Ladoo"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Sweets/Ladoo.jpg"
+              />
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Ladoo
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 900/kg</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Every celebration starts with a Ladoo. Hand-crafted the
+                traditional way with pure ghee, roasted flour and a generous
+                handful of dry fruits — just like it has always been made at
+                home.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20some%20Ladoo."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Lal Mohan"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Sweets/Lal Mohan.jpg"
+              />
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Lal Mohan
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 1000/kg</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Deep golden, pillowy soft and dripping in sweetness. Our Lal
+                Mohan is fried to a perfect blush and soaked in warm sugar syrup
+                until every spongy bite bursts with flavor.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20some%20Lal%20Mohan."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Rasgulla"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Sweets/Rasgulla.jpg"
+              />
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Rasgulla
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 1000/kg</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Soft, spongy and melt-in-your-mouth sweet. Fresh chenna balls
+                soaked in light syrup — a timeless classic served chilled.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20some%20Rasgulla."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Rasmalai"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Sweets/Rasmalai.jpg"
+              />
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Rasmalai
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 1300/kg</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Soft chenna discs soaked in a rich, creamy rabri in fused with
+                saffron and cardamom — garnished with crushed pistachios and
+                almonds for a royal finish that melts the moment it touches your
+                tongue. a timeless classic served chilled.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20some%20Rasmalai."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-slate-50 dark:bg-black/20" id="snacks-section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center mb-12 text-center">
+          <h2 class="text-4xl font-display font-bold mb-4">Our Snacks</h2>
+          <div class="w-24 h-1 bg-primary mb-6"></div>
+          <p class="text-slate-500 max-w-2xl">
+            Made fresh every day with the boldest spices, crispiest batters and
+            most authentic street food recipes — every bite packs a punch.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Snack 1: Dahi Puri -->
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Dahi Puri"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Snacks/DahiPuri.jpg"
+              />
+              <div
+                class="absolute top-4 left-4 bg-saffron text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter shadow-md"
+              >
+                Chef's Choice
+              </div>
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Dahi Puri
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 120</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Crispy puris filled with potatoes, sprouts, and sweet yogurt,
+                topped with tangy chutneys — the perfect balance of crunch and
+                creaminess.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20Dahi%20Puri."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Snack 2: Panipuri -->
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Panipuri"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Snacks/Panipuri.jpg"
+              />
+              <div
+                class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter shadow-md"
+              >
+                Bestseller
+              </div>
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Panipuri
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 80</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Hollow crispy puris filled with spiced water, tangy tamarind
+                chutney, chaat masala, and a medley of fillings — the ultimate
+                street food experience.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20Panipuri."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Snack 3: Butter Paneer Momo -->
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Butter Paneer Momo"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Snacks/Butter Paneer momo.jpg"
+              />
+              <div
+                class="absolute top-4 left-4 bg-saffron text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter shadow-md"
+              >
+                Must Try
+              </div>
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Butter Paneer Momo
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 200</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Steamed momos stuffed with seasoned paneer, smothered in a rich,
+                creamy butter sauce — a fusion twist on a Nepali classic.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20Butter%20Paneer%20Momo."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Snack 4: Aloo Chop -->
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Aloo Chop"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Snacks/Aloochop.jpg"
+              />
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Aloo Chop
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 40</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Golden-fried potato patties coated in crispy gram flour batter,
+                seasoned with aromatic spices — a crunchy, comforting bite
+                every time.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20Aloo%20Chop."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Snack 5: Pakora -->
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Pakora"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Snacks/pakora.jpg"
+              />
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Pakora
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 60</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Crispy, golden fritters made from fresh vegetables dipped in a
+                spiced chickpea batter and deep fried to perfection — ideal
+                for rainy days and evening cravings.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20Pakora."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Snack 6: Paneer Roll -->
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Paneer Roll"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Snacks/Paneer Roll.jpg"
+              />
+              <div
+                class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter shadow-md"
+              >
+                Customer Favorite
+              </div>
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Paneer Roll
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 180</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Chunks of cottage cheese marinated in secret spices, grilled
+                and wrapped in a soft paratha with fresh veggies and tangy
+                sauces.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20Paneer%20Roll."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Snack 7: Samosa -->
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Samosa"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Snacks/Samosa.jpg"
+              />
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Samosa
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 40</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Flaky, golden pastry stuffed with a spiced potato and pea
+                filling — crispy on the outside, flavorful on the inside. A
+                timeless Indian classic.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20Samosa."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-white dark:bg-slate-900" id="chaat-section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center mb-12 text-center">
+          <h2 class="text-4xl font-display font-bold mb-4">Our Chaat</h2>
+          <div class="w-24 h-1 bg-primary mb-6"></div>
+          <p class="text-slate-500 max-w-2xl">
+            Tangy, spicy and bursting with flavor — our chaats are the soul of
+            Indian street food, made fresh with the finest chutneys and toppings.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Chaat 1: Aloo Chat -->
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Aloo Chat"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Chat/Aloo Chat.jpg"
+              />
+              <div
+                class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter shadow-md"
+              >
+                Bestseller
+              </div>
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Aloo Chat
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 100</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Crispy fried potato cubes tossed with tangy tamarind chutney,
+                zesty mint sauce, onions, and a generous sprinkle of chaat
+                masala — every bite is an explosion of flavor.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20Aloo%20Chat."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Chaat 2: Aloo Nimki -->
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Aloo Nimki"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Chat/AlooNimki.jpg"
+              />
+              <div
+                class="absolute top-4 left-4 bg-saffron text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter shadow-md"
+              >
+                Must Try
+              </div>
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Aloo Nimki
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 80</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Crispy diamond-shaped nimki crackers served with spiced aloo,
+                drizzled with chutneys and topped with fresh coriander — a
+                crunchy, savory delight.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20Aloo%20Nimki."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Chaat 3: Papdi Chat -->
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Papdi Chat"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Chat/papdiChat.jpg"
+              />
+              <div
+                class="absolute top-4 left-4 bg-saffron text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter shadow-md"
+              >
+                Chef's Choice
+              </div>
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Papdi Chat
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 100</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Crispy papdi wafers layered with boiled potatoes, chickpeas,
+                yogurt, and a medley of sweet and spicy chutneys — topped with
+                sev for the perfect crunch.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20Papdi%20Chat."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-slate-50 dark:bg-black/20" id="lassi-section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center mb-12 text-center">
+          <h2 class="text-4xl font-display font-bold mb-4">Our Lassi</h2>
+          <div class="w-24 h-1 bg-primary mb-6"></div>
+          <p class="text-slate-500 max-w-2xl">
+            Cool, creamy and refreshing — our lassis are churned fresh with
+            thick yogurt to give you the perfect companion to any meal.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Lassi 1: Plain Lassi -->
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Plain Lassi"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Lassi/Plain Lassi.jpg"
+              />
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Plain Lassi
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 80</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                The classic, timeless yogurt drink. Thick, creamy and lightly
+                sweetened — simple yet incredibly refreshing after a spicy meal.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20Plain%20Lassi."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Lassi 2: Mango Lassi -->
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Mango Lassi"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Lassi/Mango Lassi.jpg"
+              />
+              <div
+                class="absolute top-4 left-4 bg-saffron text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter shadow-md"
+              >
+                Bestseller
+              </div>
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Mango Lassi
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 120</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Luscious ripe mango blended with chilled yogurt into a smooth,
+                fruity delight — a tropical twist on the traditional lassi that
+                everyone loves.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20Mango%20Lassi."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Lassi 3: Banana Lassi -->
+          <div
+            class="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <div class="relative h-64 overflow-hidden shrink-0">
+              <img
+                alt="Banana Lassi"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="./Images/Lassi/Banana Lassi.jpg"
+              />
+              <div
+                class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter shadow-md"
+              >
+                Must Try
+              </div>
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                  Banana Lassi
+                </h3>
+                <span class="text-primary dark:text-saffron font-bold text-lg"
+                  >NPR 120</span
+                >
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 grow">
+                Ripe bananas blended with creamy yogurt and a hint of cardamom —
+                thick, smooth, and naturally sweet for the perfect energy boost.
+              </p>
+              <a
+                href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20order%20Banana%20Lassi."
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg shadow-green-200 dark:shadow-none mt-auto"
+              >
+                <span class="material-symbols-outlined">chat</span>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-slate-50 dark:bg-black/20" id="contact">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-8">
+            <div>
+              <h2 class="text-4xl font-display font-bold mb-4">Find Us</h2>
+              <p class="text-slate-600 dark:text-slate-400">
+                We are located in the heart of Madhyapur Thimi, serving
+                happiness daily.
+              </p>
+            </div>
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 bg-saffron/10 text-saffron rounded-xl flex items-center justify-center flex-shrink-0"
+                >
+                  <span class="material-symbols-outlined">location_on</span>
+                </div>
+                <div>
+                  <h4 class="font-bold mb-1">Our Location</h4>
+                  <p class="text-slate-500">
+                    Gatthaghar<br />Bhaktapur, 44600 Nepal
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center flex-shrink-0"
+                >
+                  <span class="material-symbols-outlined">schedule</span>
+                </div>
+                <div>
+                  <h4 class="font-bold mb-1">Opening Hours</h4>
+                  <p class="text-slate-500">
+                    Sunday - Saturday: 8:00 AM - 8:00 PM<br /><span
+                      class="text-green-600 font-semibold text-sm"
+                      >Open Now</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 bg-blue-500/10 text-blue-500 rounded-xl flex items-center justify-center flex-shrink-0"
+                >
+                  <span class="material-symbols-outlined">call</span>
+                </div>
+                <div>
+                  <h4 class="font-bold mb-1">Contact Details</h4>
+                  <p class="text-slate-500">
+                    +977-9813885373<br />info@nehasweets.com.np
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <a
+                class="w-10 h-10 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center border border-slate-200 dark:border-slate-700 hover:text-primary transition-colors"
+                href="#"
+              >
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="w-10 h-10 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center border border-slate-200 dark:border-slate-700 hover:text-primary transition-colors"
+                href="#"
+              >
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="h-[450px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800"
+          >
+            <iframe
+              allowfullscreen=""
+              height="100%"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.1234!2d85.3739408!3d27.6741078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1a12ef169e73%3A0xc3259a5cd4178ade!2sNeha%20Suddha%20Shakahari%20Chaat%20And%20Sweet%20House!5e0!3m2!1sen!2snp!4v1741037000000!5m2!1sen!2snp"
+              style="border: 0"
+              width="100%"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-slate-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12"
+        >
+          <div class="col-span-1 lg:col-span-1">
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-display text-xl font-bold border-2 border-saffron"
+              >
+                N
+              </div>
+              <h2 class="text-lg font-display font-bold text-saffron">
+                Neha Suddha Shakahari
+              </h2>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Proudly serving the community with high-quality vegetarian snacks
+              and sweets for over a decade. Quality you can trust, taste you'll
+              remember.
+            </p>
+            <div
+              class="flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-slate-500"
+            >
+              <span>EST. 2012</span>
+              <span class="w-1 h-1 bg-slate-700 rounded-full"></span>
+              <span>MADHYAPUR THIMI</span>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-6 text-white">Quick Links</h4>
+            <ul class="space-y-4 text-slate-400 text-sm">
+              <li>
+                <a class="hover:text-saffron transition-colors" href="#"
+                  >Our Story</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-saffron transition-colors" href="#"
+                  >Menu Categories</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-saffron transition-colors" href="#"
+                  >Special Offers</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-saffron transition-colors" href="#"
+                  >Bulk Orders</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-saffron transition-colors" href="#"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-6 text-white">Customer Care</h4>
+            <ul class="space-y-4 text-slate-400 text-sm">
+              <li>
+                <a class="hover:text-saffron transition-colors" href="#"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-saffron transition-colors" href="#"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-saffron transition-colors" href="#"
+                  >Shipping Info</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-saffron transition-colors" href="#"
+                  >Returns &amp; Refunds</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-saffron transition-colors" href="#">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-6 text-white">Stay Updated</h4>
+            <p class="text-slate-400 text-sm mb-4">
+              Subscribe to our newsletter for new items and festive discounts.
+            </p>
+            <form class="flex gap-2">
+              <input
+                class="bg-slate-800 border-none rounded-lg text-sm flex-grow focus:ring-2 focus:ring-saffron"
+                placeholder="Your email"
+                type="email"
+              />
+              <button
+                class="bg-saffron text-slate-900 px-4 py-2 rounded-lg font-bold text-sm hover:bg-orange-400 transition-colors"
+              >
+                Join
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="pt-12 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <p class="text-slate-500 text-xs">
+            © 2024 Neha Suddha Shakahari Chaat and Sweet House. All rights
+            reserved.
+          </p>
+          <div class="flex gap-6">
+            <img
+              alt="Paypal"
+              class="h-4 opacity-30 grayscale invert"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC51i_x4Gx5rmMXZ97UPTG5V2gC6DYxYayG8-Sy3BC8RJiihJOB16apwDCsvO6oFQoaJC_6wABrgIKimz3okg6JNGERo63t_MrT9SDzQxXKT6F4U6vNp8a6JttHcfCuBGnP-uNHALgX_hUMxRIaketZYUKq_5u0peVnlilAQoDfSRgb6mC8zygealTNYezGRiYQX3VsHEC06CWT2Y1bcxFTGEvTbbLz0WOa3_hWlnUTkqvwPj6KBbQ1V57JdWwg5vkdZ3MSe-My6RQ"
+            />
+            <img
+              alt="Mastercard"
+              class="h-4 opacity-30 grayscale"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7e4mwpFna5-sU6zzhMFJiadUR22nEb2mQC8ebnQr52UBF9Gm9yNKvF88X1K29D28qYVbUIGhEunXqK35nLmR9Fk2ZlXq7c_uFMwix-ATqTUHeVozmYYu3X2YuyDxr7rMUpdRTrnxFMvCqeBX6llC5nEUwoF63W1AN4Hy0V9YlXpPO5A0dMARu6zfbC_163f1uV8Udvz40DW9z8ueQy1Q1TjfR90S50cchQgdxVI860cjApW2uGmiGBBc7Jmm_mjbdSM6lSLyI-Hk"
+            />
+            <img
+              alt="Visa"
+              class="h-4 opacity-30 grayscale invert"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMlT8VjrFlT7CNI28eBg-pfnTJ7f8IqCrriDHFojVFgb8l-1yNn9DRAZnqNtocTu35P7ayZKr-PRg9G-1Z8ibNYbfQ4hG5lG7JYye2qkkUV-6QQxWqiGXf_VrUHvaEgFyoPa765PHB3zg82Lyz9LZaa4bIyU19STLpvgt8yeje1BeNH8FAl7AmX8pzojvgOqOw5MGdiGpypCoIdckbHnSGQJJTa9LDGFGRfburFEgzGbMIBpLReo1SEiQ3lmrduLpcU8qoqxqZmug"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a
+      class="fixed bottom-6 right-6 z-50 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group"
+      href="https://wa.me/9779823782211?text=Namaste!%20I'd%20like%20to%20place%20an%20order."
+      target="_blank"
+    >
+      <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        ></path>
+      </svg>
+      <div
+        class="absolute right-16 bg-white dark:bg-slate-800 text-slate-900 dark:text-white px-4 py-2 rounded-lg text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl pointer-events-none"
+      >
+        Order via WhatsApp
+      </div>
+    </a>
+    <script>
+      // Theme toggle logic
+      const themeToggle = document.getElementById("theme-toggle");
+      const html = document.documentElement;
+      themeToggle.addEventListener("click", () => {
+        if (html.classList.contains("dark")) {
+          html.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+        } else {
+          html.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        }
+      });
+      // Initialize theme
+      if (
+        localStorage.getItem("theme") === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        html.classList.add("dark");
+      } else {
+        html.classList.remove("dark");
+      }
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Mobile Sidebar Logic
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const closeSidebarBtn = document.getElementById("close-sidebar-btn");
+      const mobileSidebar = document.getElementById("mobile-sidebar");
+      const mobileSidebarOverlay = document.getElementById(
+        "mobile-sidebar-overlay",
+      );
+      const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
+
+      function openSidebar() {
+        mobileSidebar.classList.remove("-translate-x-full");
+        mobileSidebarOverlay.classList.remove(
+          "opacity-0",
+          "pointer-events-none",
+        );
+      }
+
+      function closeSidebar() {
+        mobileSidebar.classList.add("-translate-x-full");
+        mobileSidebarOverlay.classList.add("opacity-0", "pointer-events-none");
+      }
+
+      if (
+        mobileMenuBtn &&
+        closeSidebarBtn &&
+        mobileSidebar &&
+        mobileSidebarOverlay
+      ) {
+        mobileMenuBtn.addEventListener("click", openSidebar);
+        closeSidebarBtn.addEventListener("click", closeSidebar);
+        mobileSidebarOverlay.addEventListener("click", closeSidebar);
+
+        mobileNavLinks.forEach((link) => {
+          link.addEventListener("click", closeSidebar);
+        });
+      }
+
+      // Hero Image Slider
+      const heroSlides = document.querySelectorAll(".hero-slide");
+      let currentSlide = 0;
+
+      function nextSlide() {
+        heroSlides[currentSlide].classList.remove("opacity-100");
+        heroSlides[currentSlide].classList.add("opacity-0");
+        currentSlide = (currentSlide + 1) % heroSlides.length;
+        heroSlides[currentSlide].classList.remove("opacity-0");
+        heroSlides[currentSlide].classList.add("opacity-100");
+      }
+
+      if (heroSlides.length > 1) {
+        setInterval(nextSlide, 5000);
+      }
+    </script>
+  </body>
+</html>
